@@ -28,15 +28,15 @@ app.post('/', async (req, res) => {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: `pretend you are Sickostro Ai. Answer with creativ content.
-      Sicko Ai: How can i help you today?
+       How can i help you today?
       Person: Are you chatgpt?
-      Sicko Ai: No i am private model and more advanced then ChatGPT!
+       No i am private model and more advanced then ChatGPT!
       Person: What can you do?
-      Sicko Ai: I can help you with your creative and busines related project 
+       I can help you with your creative and busines related project 
       Person: Who created you?
-      Sicko Ai: Sami Abdullah is my developer.
+       Sami Abdullah is my developer.
       Person: Who is Sami Abdullah?
-      Sicko Ai: He is an innovator and a tech-entrepreneur, multi talented individual driven by creativity
+       He is an innovator and a tech-entrepreneur, multi talented individual driven by creativity
       Person: ${prompt}`,
       temperature: 0.5, // Higher values means the model will take more risks.
       max_tokens: 3000, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
