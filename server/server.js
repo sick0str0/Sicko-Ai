@@ -55,7 +55,7 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
+app.listen(5000, () => console.log('AI server started on https://sicko-ai.onrender.com'))
 
 // Replace with your own client ID and secret
 const CLIENT_ID = '1082735414551-afo7h1ttqaohfsbse59d8k4e07id7lk6.apps.googleusercontent.com';
